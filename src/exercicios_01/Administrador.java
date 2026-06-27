@@ -25,9 +25,9 @@ public class Administrador extends Usuario{
 
 		     super.visualizar();
 
-		     System.out.printf("**      Nivel de Acesso: %s%n", this.getNivelDeAcesso());
+		     System.out.printf("**	Nivel de Acesso: %s%n ", this.getNivelDeAcesso());
 
-		     System.out.println("*****************************************************");
+		     System.out.println("*****************************************************\n");
 	 
 	
 

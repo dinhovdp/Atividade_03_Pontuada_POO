@@ -16,9 +16,14 @@ public class Usuario {
 	 */
 		
 		public Usuario(String nome, String email) {
-			this.nome = nome;
-			this.email = email;
 			
+			//Validacao ANTES de pedir o atributo	
+			Validacao.validarNome(nome);
+		    Validacao.validarEmail(email);
+			
+			this.nome = nome;	
+			this.email = email;
+			  
 		}
 
 		/* SouRce - Generate getts and setters - select all 
@@ -64,13 +69,13 @@ public class Usuario {
 			 */
 		
 		
-				
+				System.out.println("\n****************************************************");
 				System.out.println("*****************************************************");
-				System.out.println("**		DADOS DE USUARIOS			   **");
+				System.out.println("**		DADOS DE USUARIOS		  **");
 				System.out.println("*****************************************************");
-				System.out.printf("**		Nome do Usuario: %s ", this.nome);
-				System.out.printf("**		Dados  do e-mail: %s ", this.email);
-				System.out.println("*****************************************************");
+				System.out.printf("**	Nome do Usuario: %s \n", this.nome);
+				System.out.printf("**	Dados do e-mail: %s \n", this.email);
+				;
 		
 		}
 
