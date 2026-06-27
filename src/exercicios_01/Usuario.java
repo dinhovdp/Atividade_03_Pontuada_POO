@@ -1,14 +1,14 @@
 package exercicios_01;
 
-public  class Usuario {
+public class Usuario {
 
 
 	/* ATRIBUTOS DA CLASSE
 	 * modificadores de Acesso será " private " deve ser colocado antes do tipo da variavel
 	 */
 	
-		private String nome = "";
-		private String email = "";
+		private String nome;
+		private String email;
 		
 				
 	/*Metodo construtor - Gerar as intancias (objetos) da Classe
@@ -68,8 +68,8 @@ public  class Usuario {
 				System.out.println("*****************************************************");
 				System.out.println("**		DADOS DE USUARIOS			   **");
 				System.out.println("*****************************************************");
-				System.out.printf("**		Nome do Usuario: %s %s", this.nome);
-				System.out.printf("**		Dados  do e-mail: %s %s", this.email);
+				System.out.printf("**		Nome do Usuario: %s ", this.nome);
+				System.out.printf("**		Dados  do e-mail: %s ", this.email);
 				System.out.println("*****************************************************");
 		
 		}
